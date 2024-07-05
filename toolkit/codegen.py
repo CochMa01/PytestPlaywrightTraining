@@ -15,7 +15,7 @@ def run(playwright: Playwright) -> None:
     page.get_by_role("button", name="Search").click()
     page.locator("#toc-Senses").get_by_role("link", name="Senses").click()
     page.get_by_role("link", name="Whiskers", exact=True).click()
-    expect(page.locator("#Behavior")).to_contain_text("Behavsior")
+    expect(page.locator("#Behavior")).to_contain_text("Behavior")
 
     # ---------------------
     context.close()

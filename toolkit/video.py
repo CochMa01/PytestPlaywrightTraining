@@ -3,12 +3,10 @@ from playwright.sync_api import Playwright, sync_playwright, expect
 
 
 def run(playwright: Playwright) -> None:
-    browser = playwright.webkit.launch(headless=False, slow_mo=1000)
-    context = browser.new_context()
+    browser = playwright.firefox.launch(headless=False, slow_mo=1000)
+    context = browser.new_context(record_video_dir="toolkit/video/", record_video_size={"width": 1280, "height": 720})
     page = context.new_page()
     page.goto("https://www.wikipedia.org/")
-    context.tracing.start(screenshots=True, snapshots=True, sources=True)
-
     expect(page.get_by_text("The Free Encyclopedia")).to_be_visible()
     page.get_by_label("Search Wikipedia").click()
     page.get_by_label("Search Wikipedia").fill("Cats")
@@ -18,7 +16,6 @@ def run(playwright: Playwright) -> None:
     page.locator("#toc-Senses").get_by_role("link", name="Senses").click()
     page.get_by_role("link", name="Whiskers", exact=True).click()
     expect(page.locator("#Behavior")).to_contain_text("Behavior")
-    context.tracing.stop(path="toolkit/trace/trace.zip")
 
     # ---------------------
     context.close()

@@ -10,7 +10,7 @@ def run(playwright: Playwright) -> None:
     expect(page.get_by_text("The Free Encyclopedia")).to_be_visible()
     page.get_by_label("Search Wikipedia").click()
     page.get_by_label("Search Wikipedia").fill("Cats")
-    page.get_by_text("Wikipedia The Free Encyclopedia English 6,841,000+ articles 日本語 1,420,000+ 記事").click()
+    page.get_by_label("Search Wikipedia").click()
     expect(page.get_by_label("Search Wikipedia")).to_have_value("Cats")
     page.get_by_role("button", name="Search").click()
     page.locator("#toc-Senses").get_by_role("link", name="Senses").click()

@@ -4,7 +4,6 @@ from playwright.sync_api import sync_playwright
 
 siteUrl = "https://playwright.dev"
 
-
 with sync_playwright() as p:
     browser = p.firefox.launch(headless=False, slow_mo=2000)
     print("Running SYNCHRONOUS in FIREFOX.")
@@ -16,16 +15,18 @@ with sync_playwright() as p:
     print(page.title(), "\n")
     browser.close()
 
+
 async def main():
     async with async_playwright() as ap:
-        browser = await ap.chromium.launch(headless=False, slow_mo=2000)
+        browser2 = await ap.chromium.launch(headless=False, slow_mo=2000)
         print("Running ASYNCHRONOUS in CHROME.")
 
-        page = await browser.new_page()
+        page2 = await browser2.new_page()
 
-        await page.goto(siteUrl)
+        await page2.goto(siteUrl)
 
-        print(await page.title())
-        await browser.close()
+        print(await page2.title())
+        await browser2.close()
+
 
 asyncio.run(main())

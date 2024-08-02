@@ -1,0 +1,6 @@
+pytest
+pytest-playwright
+pandas
+openpyxl
+pytest-html-reporter
+pytest-xdist

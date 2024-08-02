@@ -1,0 +1,58 @@
+2024-08-02 00:02:41,358 - test_logger - INFO - Successfully read test data from file: batch1/src/tests/data/test_data.xlsx with sheet: Login.
+
+2024-08-02 00:02:46,125 - test_logger - INFO - ---------- Running test: test_login_with_standard_user ----------
+2024-08-02 00:02:47,223 - test_logger - INFO - Cleared username field.
+2024-08-02 00:02:48,277 - test_logger - INFO - Username field populated with: standard_user.
+2024-08-02 00:02:49,320 - test_logger - INFO - Cleared password field.
+2024-08-02 00:02:50,380 - test_logger - INFO - Username field populated with: ************.
+2024-08-02 00:02:51,547 - test_logger - INFO - Clicked login button.
+2024-08-02 00:02:51,611 - test_logger - INFO - ---------- Completed test: test_login_with_standard_user ----------
+
+2024-08-02 00:02:56,685 - test_logger - INFO - ---------- Running test: test_login_with_invalid_user ----------
+2024-08-02 00:02:57,750 - test_logger - INFO - Cleared username field.
+2024-08-02 00:02:58,816 - test_logger - INFO - Username field populated with: invalid_user.
+2024-08-02 00:02:59,885 - test_logger - INFO - Cleared password field.
+2024-08-02 00:03:00,939 - test_logger - INFO - Username field populated with: ************.
+2024-08-02 00:03:02,063 - test_logger - INFO - Clicked login button.
+2024-08-02 00:03:02,081 - test_logger - INFO - ---------- Completed test: test_login_with_invalid_user ----------
+
+2024-08-02 00:03:06,964 - test_logger - INFO - ---------- Running test: test_login_with_no_credentials ----------
+2024-08-02 00:03:08,077 - test_logger - INFO - Clicked login button.
+2024-08-02 00:03:08,099 - test_logger - INFO - ---------- Completed test: test_login_with_no_credentials ----------
+
+2024-08-02 00:03:13,225 - test_logger - INFO - ---------- Running test: test_access_inventory_without_login ----------
+2024-08-02 00:03:13,264 - test_logger - INFO - ---------- Completed test: test_access_inventory_without_login ----------
+
+2024-08-02 00:03:13,362 - test_logger - INFO - Successfully read test data from file: batch1/src/tests/data/test_data.xlsx with sheet: Logout.
+
+2024-08-02 00:03:18,141 - test_logger - INFO - ---------- Running test: test_logout ----------
+2024-08-02 00:03:19,200 - test_logger - INFO - Cleared username field.
+2024-08-02 00:03:20,271 - test_logger - INFO - Username field populated with: standard_user.
+2024-08-02 00:03:21,335 - test_logger - INFO - Cleared password field.
+2024-08-02 00:03:22,381 - test_logger - INFO - Username field populated with: ************.
+2024-08-02 00:03:23,533 - test_logger - INFO - Clicked login button.
+2024-08-02 00:03:24,637 - test_logger - INFO - Clicked the burger menu.
+2024-08-02 00:03:25,765 - test_logger - INFO - Clicked the logout link.
+2024-08-02 00:03:25,796 - test_logger - INFO - ---------- Completed test: test_logout ----------
+
+2024-08-02 00:03:25,906 - test_logger - INFO - Successfully read test data from file: batch1/src/tests/data/test_data.xlsx with sheet: Products.
+
+2024-08-02 00:03:30,690 - test_logger - INFO - ---------- Running test: test_add_to_cart_product ----------
+2024-08-02 00:03:31,767 - test_logger - INFO - Cleared username field.
+2024-08-02 00:03:32,837 - test_logger - INFO - Username field populated with: standard_user.
+2024-08-02 00:03:33,898 - test_logger - INFO - Cleared password field.
+2024-08-02 00:03:34,946 - test_logger - INFO - Username field populated with: ************.
+2024-08-02 00:03:36,103 - test_logger - INFO - Clicked login button.
+2024-08-02 00:03:37,201 - test_logger - INFO - Clicked Add to Cart or Remove button for Sauce Labs Bolt T-Shirt.
+2024-08-02 00:03:37,242 - test_logger - INFO - ---------- Completed test: test_add_to_cart_product ----------
+
+2024-08-02 00:03:42,073 - test_logger - INFO - ---------- Running test: test_remove_product_from_cart ----------
+2024-08-02 00:03:43,154 - test_logger - INFO - Cleared username field.
+2024-08-02 00:03:44,208 - test_logger - INFO - Username field populated with: standard_user.
+2024-08-02 00:03:45,272 - test_logger - INFO - Cleared password field.
+2024-08-02 00:03:46,323 - test_logger - INFO - Username field populated with: ************.
+2024-08-02 00:03:47,480 - test_logger - INFO - Clicked login button.
+2024-08-02 00:03:48,543 - test_logger - INFO - Clicked Add to Cart or Remove button for Sauce Labs Bike Light.
+2024-08-02 00:03:49,610 - test_logger - INFO - Clicked Add to Cart or Remove button for Sauce Labs Bike Light.
+2024-08-02 00:03:49,642 - test_logger - INFO - ---------- Completed test: test_remove_product_from_cart ----------
+

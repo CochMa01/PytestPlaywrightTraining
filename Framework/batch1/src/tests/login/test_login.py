@@ -80,3 +80,9 @@ def test_access_inventory_without_login(test_data, test_name, setup_teardown_inv
     expect(login_page.error_msg_locator).to_contain_text(error_msg)
 
     logger.info(f"---------- Completed test: {test_name} ----------\n")
+
+
+    # Run the scripts using the following command:
+    # pytest --headed --slowmo 1000 --browser chromium -s -v
+    # With reports:
+    # pytest --headed --slowmo 1000 --browser chromium -s -v --html-report=batch1\src\utils\reports\report.html

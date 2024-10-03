@@ -10,7 +10,7 @@ with sync_playwright() as playwright:
     header_elem.highlight()
     page.wait_for_timeout(3000)
 
-    submit_elem = page.locator(".btn-primary")
+    submit_elem = page.locator(".btn.btn-primary")
     submit_elem.highlight()
     page.wait_for_timeout(3000)
 

@@ -81,6 +81,28 @@ def test_access_inventory_without_login(test_data, test_name, setup_teardown_inv
 
     logger.info(f"---------- Completed test: {test_name} ----------\n")
 
+    # Explaining the Framework
+    # Start with creating a new python package for day5.
+    # On day5, create src python package
+    # Under src, create python packages for pages, tests, utils.
+    # Under utils, create directory for logs and reports.
+    # Under tests, create directory for data.
+    # Create an excel file under this folder and name it as test_data.xlsx.
+    # Under tests, create python packages for login and products.
+    # Under tests, create a conftest.py.
+    # Under pages, create LoginPage.py and ProductsListPage.py (Page locators part only.)
+    # Under tests/login, create test_login.py
+
+    # Run the scripts using the following command:
+    # pytest --headed --slowmo 1000 --browser chromium -s -v
+    # With reports:
+    # pytest --headed --slowmo 1000 --browser chromium -s -v --html-report=batch1\src\utils\reports\report.html
+
+    # If we still have time, do another example. Update test_data.xlsx.
+    # Update the pages/ProductsListPage.py
+    # Update the test_login.py file.
+    # Create a test_logout.py file.
+    # Create test_products_list.py file.
 
     # Run the scripts using the following command:
     # pytest --headed --slowmo 1000 --browser chromium -s -v

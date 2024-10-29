@@ -203,5 +203,5 @@ with sync_playwright() as playwright:
     context.close()
     browser.close()
 
-    # Run the script using the following command: python 18_FinalExercise.py
+    # Run the script using the following command: python 18_FinalExercise_PHPTravels_Hotels.py
     

@@ -83,6 +83,7 @@ def test_access_inventory_without_login(test_data, test_name, setup_teardown_inv
 
     # Explaining the Framework
     # Start with creating a new python package for day5.
+    # day5 should have __init__.py file.
     # On day5, create src python package
     # Under src, create python packages for pages, tests, utils.
     # Under utils, create directory for logs and reports.

@@ -4,7 +4,7 @@ with (sync_playwright() as playwright):
     browser = playwright.chromium.launch(headless=False, args=["--start-maximized"])
     context = browser.new_context(no_viewport=True)
     page = context.new_page()
-    page.goto("https://demoqa.com/dynamic-properties")
+    page.goto("https://demoqa.com/dynamic-properties", timeout=60000)
 
     # Happy Path
     button_disabled_elem = page.locator("#enableAfter")

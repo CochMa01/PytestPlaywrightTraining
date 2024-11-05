@@ -16,7 +16,10 @@ def run(playwright: Playwright) -> None:
     page.get_by_role("button", name="Search").click()
     page.locator("#toc-Senses").get_by_role("link", name="Senses").click()
     page.get_by_role("link", name="Whiskers", exact=True).click()
-    expect(page.locator("#Behavior")).to_contain_text("Behavior")
+    try:
+        expect(page.locator("#Behavior")).to_contain_text("Behavior1")
+    except AssertionError as e:
+        print(f"Assertion failed: {e}")
 
     context.tracing.stop(path="toolkit/trace/trace.zip")
 
@@ -32,3 +35,8 @@ with sync_playwright() as playwright:
     # We are expecting to have a zip file in the toolkit/trace directory named trace.zip.
     # This zip file will contain the trace of the browser's activity.
     # To view the trace, run "playwright show-trace toolkit/trace/trace.zip" on the terminal.
+
+    # try:
+    #     expect(page.locator("#Behavior")).to_contain_text("Behavior1")
+    # finally:
+    #     context.tracing.stop(path="toolkit/trace/trace.zip")
